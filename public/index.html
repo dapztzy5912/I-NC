@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-In-One Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>All-In-One Uploader</h1>
+      <p>Upload your files to multiple services with one click</p>
+    </header>
+
+    <main>
+      <div class="upload-area" id="uploadArea">
+        <input type="file" id="fileInput" style="display: none;">
+        <div class="drop-zone" id="dropZone">
+          <p>Drag & Drop your file here</p>
+          <p>or</p>
+          <button id="selectFileBtn">Select File</button>
+        </div>
+      </div>
+
+      <div class="options">
+        <label for="uploaderSelect">Select Upload Service:</label>
+        <select id="uploaderSelect">
+          <option value="">Loading services...</option>
+        </select>
+      </div>
+
+      <button id="uploadBtn" disabled>Upload File</button>
+
+      <div class="result" id="resultContainer" style="display: none;">
+        <h3>Upload Result:</h3>
+        <div id="resultContent"></div>
+        <button id="copyBtn">Copy Link</button>
+      </div>
+
+      <div class="status" id="status"></div>
+    </main>
+
+    <footer>
+      <p>Auto Update | All-In-One Uploader</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
